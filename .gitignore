@@ -1,0 +1,11 @@
+# Ambiente virtual
+venv/
+
+# Variáveis sensíveis
+.env
+
+# Outros arquivos temporários
+__pycache__/
+*.pyc
+*.log
+payable.db
