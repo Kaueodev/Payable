@@ -6,7 +6,7 @@ def manual_entry():
 
     while True:
         try:
-            valor = float(input('Valor do boleto (ex: 129.90):' ).replace(',',','))
+            valor = float(input('Valor do boleto (ex: 129.90):' ).replace(',','.'))
             break
         except ValueError:
             print('"⚠️ Valor inválido. Tente novamente.')
@@ -53,7 +53,7 @@ def manual_entry():
 # Mesma lógica do outro dict que percore categorias e valida a informação do usuario 
         while True:
             cat = input('Digite o número da categoria: ').strip()
-            if cat in categoria:
+            if cat in categorias:
                 categoria = categorias[cat]
                 break
             else:
